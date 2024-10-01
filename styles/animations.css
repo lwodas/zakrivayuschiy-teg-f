@@ -12,3 +12,72 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes opacity-change {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes size-scale {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(4px);
+    }
+  }
+
+  .card__icon-button:active .heart-main-body {
+    fill: var(--animation-color);
+    transition-delay: 0.05s;
+    transition-duration: 0.3;
+  }
+  
+  .like-icon.is-liked .heart-main-body {
+    transition-delay: 0.05s;
+    fill: var(--animation-color);
+  }
+  
+  .like-icon.is-liked .heart-core {
+    transition-delay: 0.03s;
+    fill: var(--animation-color);
+  }
+  
+  .like-icon.is-liked .heart-borders {
+    transition-delay: 0.07s;
+    fill: var(--animation-color);
+  }
+  
+  .like-icon.is-liked .heart-sparcles {
+    animation: opacity-change 0.3s ease-in 0.3s alternate;
+  }
+  
+  .like-icon.is-liked .heart {
+    transform-origin: center;
+    animation: size-scale 0.5s ease-in 0.1s alternate;
+  }
+
+  
