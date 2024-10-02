@@ -20,21 +20,21 @@
 }
 
 :root.theme-light {
-    --background-color: #ffffff;
-    --accent-color: #000000;
-    --background-image: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
-      linear-gradient(#e7e7e7, #1a1a1a);
-    transition: 0.3s;
-    --button__text-color: #ffffff;
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  transition: 0.3s;
+  --button__text-color: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
+  :root {
     --background-color: #ffffff;
     --accent-color: #000000;
     --background-image: repeating-linear-gradient(
