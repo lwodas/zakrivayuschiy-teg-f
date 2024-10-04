@@ -11,4 +11,6 @@
     linear-gradient(#007f0c, #004306);
   --animation-color: #ff0000;
   --button__text-color: #00cc14;
+  --font__wght-bold: 785;
+  --font__wght-regular: 465;
 }
